@@ -60,7 +60,7 @@ void mouseUp(pixel cPixel) //отжатие кнопки
     mouse_event(MOUSEEVENTF_LEFTUP, getRandomNumber(10,20), getRandomNumber(10,20), 0, 0);
 }
 
-bool searchPixelPoint(pixel cPixel)
+bool findPixelPoint(pixel cPixel)
 {
     HDC screen=GetDC(NULL);
     if(GetPixel(screen, cPixel.x, cPixel.y)==cPixel.color){
@@ -71,7 +71,7 @@ bool searchPixelPoint(pixel cPixel)
     return false;
 }
 
-bool searchPixelArea(pixelArea cArea)
+bool findPixelArea(pixelArea cArea)
 {
     HWND hWnd = GetDesktopWindow();
     HDC hdc = GetDC(hWnd);
@@ -107,7 +107,7 @@ bool searchPixelArea(pixelArea cArea)
             int red = pColor->rgbRed;
             int green = pColor->rgbGreen;
             int blue = pColor->rgbBlue;
-            if((abs(red-cArea.red))<10 && (abs(green-cArea.green))<10 && (abs(blue-cArea.blue))<10){
+            if((abs(red-cArea.red))<5 && (abs(green-cArea.green))<5 && (abs(blue-cArea.blue))<5){
                 SelectObject(compHdc, hbmpOld);
                 DeleteObject(hBitmap);
                 DeleteDC(compHdc);

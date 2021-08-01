@@ -31,6 +31,7 @@ public:
 
     void setStatus (FStatus status);
     void start();
+    void stop();
     void fishing();
 
 private:

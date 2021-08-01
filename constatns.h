@@ -21,8 +21,11 @@ struct pixelArea {
 
 const int TIMER_DELAY = 48; //таймер главного окна
 const pixel CAST_PIXEL {640, 352, 0x0BBFFF};
-const pixelArea WATCH_AREA {600, 650, 135, 180, 239,202,74};
-const pixelArea RED_AREA {566, 700, 123, 450, 255, 134, 39};
+const pixelArea CAST_AREA {630, 645, 336, 500, 255, 191, 11};
+const pixelArea WATCH_AREA {560, 700, 130, 230, 239,202,74};
+const pixelArea RED_AREA {560, 700, 130, 500, 255, 134, 39};
+const pixelArea FISH_AREA {750, 815, 461, 480, 255, 255, 255};
 const pixel START_PIXEL {704, 530, 0x69787F};
+const pixelArea POINT_AREA {631, 646, 44, 67, 251, 210, 99};
 
 #endif // CONSTATNS_H

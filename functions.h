@@ -18,8 +18,8 @@ HWND getWindowHandle(DWORD procId, const QString &title);//определние 
 void mouseDown(pixel cPixel); //нажатие мыши
 void mouseUp(pixel cPixel); //отжатие кнопки
 
-bool searchPixelPoint(pixel cPixel);
-bool searchPixelArea(pixelArea cArea);
+bool findPixelPoint(pixel cPixel);
+bool findPixelArea(pixelArea cArea);
 
 int getRandomNumber(int min = INT16_MIN, int max = INT16_MAX); //генератор рандомных чисел (от, до)
 
