@@ -18,7 +18,8 @@ enum FStatus //что делает персонаж
     waiting,
     casting,
     watching,
-    fishing
+    fishing,
+    chilling
 };
 
 class Rybak : public QMainWindow
@@ -33,11 +34,14 @@ public:
     void start();
     void stop();
     void fishing();
+    void repair();
 
 private:
     Ui::Rybak *ui;
     QTimer *timer=nullptr;
     FStatus m_status;
+    bool m_mouseDown=false;
+    int m_chillCount=0;
 };
 
 #endif // RYBAK_H
