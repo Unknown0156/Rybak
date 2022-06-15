@@ -19,7 +19,8 @@ enum FStatus //что делает персонаж
     casting,
     watching,
     fishing,
-    chilling
+    chilling,
+    repairing
 };
 
 class Rybak : public QMainWindow

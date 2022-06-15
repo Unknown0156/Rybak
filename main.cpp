@@ -2,6 +2,7 @@
 #include "rybak.h"
 
 #include <QApplication>
+#include <QDebug>
 
 const wchar_t* PROC_NAME = L"NewWorld.exe";
 HWND g_hWnd = NULL; //хэндлер окна
